@@ -29,12 +29,15 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+
+        Card.DO_NOT = false;
+
         audioSource = GetComponent<AudioSource>();
         // Inicializa o AudioSource da música
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.clip = backgroundMusic;
         musicSource.loop = true;           // Faz a música tocar em loop
-        musicSource.volume = 0.4f;         // Volume moderado
+        musicSource.volume = 0.2f;         // Volume moderado
         musicSource.Play();
 
         string currentScene = SceneManager.GetActiveScene().name;
@@ -170,11 +173,16 @@ public class GameManager : MonoBehaviour
             {
                 SceneManager.LoadScene("Level3");
             }
+            else if (currentScene == "Level3")
+            {
+                SceneManager.LoadScene("FinalScene"); // ✅ Leva à nova cena final
+            }
             else
             {
                 Debug.Log("Fim do jogo. Nenhuma próxima fase configurada.");
             }
         }
+
 
 
     }

@@ -13,16 +13,16 @@ public class EducationalInfo : MonoBehaviour
         "Você protegeu a natureza!",
         "Muito bem! Lixo reciclado!",
         "Excelente! Um passo a mais pela Terra!",
-        "Boa! O meio ambiente agradece!"
+        "Vamos juntos derrotar Zyon!"
     };
 
     private List<string> errorMessages = new List<string>()
     {
         "A cidade é minha, eu vou vencer!",
         "Você precisa aprender mais sobre reciclagem!",
-        "Errou! Mas ainda dá tempo de salvar o planeta!",
-        "Hmm… vamos tentar de novo com mais atenção.",
-        "O planeta precisa da sua ajuda!"
+        "Errou! Desse jeito eu vou poluir o mundo todo!",
+        "Hmm… Será que você é mesmo um super-herói",
+        "Jogar lixo na rua? Isso é problema dos outros!"
     };
 
     public void ShowSuccessMessage()
